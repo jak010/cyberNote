@@ -7,6 +7,7 @@ nav:
 - PlatForm:
   - CyberTalent: platform/cybertalent.md
   - PicoCTF: platform/picoctf.md
+  - CTFLearn: platform/ctflearn.md
 
 theme:
   name: "material"

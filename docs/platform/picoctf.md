@@ -10,7 +10,7 @@
 	 ```
  - Walk-Throught
    ```sh
-   cat flag
+   $ cat flag
    ```
  - Flag Is: picoCTF{s4n1ty_v3r1f13d_2aa22101}
 
@@ -28,8 +28,8 @@
     - Solve
     ```sh
     $ python3 ende.py -d flag.txt.en
-	Please enter the password:67c6cc9667c6cc9667c6cc9667c6cc96
-	picoCTF{4p0110_1n_7h3_h0us3_67c6cc96}
+	  Please enter the password:67c6cc9667c6cc9667c6cc9667c6cc96
+	  picoCTF{4p0110_1n_7h3_h0us3_67c6cc96}
     ```
 
 ### Wave a flag
