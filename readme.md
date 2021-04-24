@@ -1,20 +1,13 @@
 # Cyber Note
 - CTF, Pentesting WalkThrought
 
-## Requirement
+## Notice
+ -  github action을 이용해 main 저장소 push 시점에 자동으로 페이지가 만들어짐
+
+## Requirement ( > Python 3.6 )
  - pip install mkdocs
  - pip install mkdocstrings 
  - pip install mkdocs-material
- 
-## Note
- - Python 3.6 < Enviorment Python
 
-## Pages
- - https://jak010.github.io/cyberNote/
-
-## Notice
- - 배포할 떄 배포 저장소에는 `*.yml` 파일이 포함되어야함 안 그러면 페이지 꺠짐 <- 테스트중
-
-## Deploy
- - mkdocs gh-deploy -b note
- 
+## Page Link
+ - https://jak010.github.io/cyberNote/readme/ 
