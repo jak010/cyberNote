@@ -1,4 +1,4 @@
-xname: ci
+name: jak010 cybernote deploy
 on:
   push:
     branches:
