@@ -1,9 +1,9 @@
-name: jak010 cybernote deploy
+name: ci
 on:
   push:
     branches:
+      - master
       - main
-      - note
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -11,9 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.7
-      - run: python3 -m pip install --upgrade pip
-      - run: python3 -m pip install mkdocstrings
-      - run: python3 -m pip install mkdocs-material  
-      - run: python3 -m pip install pymdown-extensions
-      - run: mkdocs gh-deploy -t material -c -b note --force
+          python-version: 3.x
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force
