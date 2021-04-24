@@ -15,4 +15,4 @@ jobs:
       - run: pip3 install mkdocstrings
       - run: pip3 install pymdown-extensions
       - run: pip3 install mkdocs-material  
-      - run: mkdocs gh-deploy -t material -c -b note --force
+      - run: mkdocs gh-deploy --config-file mkdocs.yml -t material -c -b note --force
