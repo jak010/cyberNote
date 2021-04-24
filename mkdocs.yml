@@ -1,0 +1,20 @@
+site_name: Jak010 CTF Note
+
+nav: 
+- README: readme.md
+- Events:
+  - Affinity2020: events/affinity2020.md
+- PlatForm:
+  - CyberTalent: platform/cybertalent.md
+  - PicoCTF: platform/picoctf.md
+
+theme:
+  name: "material"
+
+plugins:
+- search
+- mkdocstrings
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
