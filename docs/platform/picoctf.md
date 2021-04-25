@@ -84,3 +84,56 @@
  $ cat ./Addadshashanammu/../fang-of-haynekhtnamet
  ```
 
+
+## Web Exploitation
+
+### Get aHEAD
+ - Description
+ ```text
+ Find the flag being held on this server to get ahead of the competition http://mercury.picoctf.net:53554/
+ ```
+ - `Walk-Throught`
+ ```sh
+ curl -IHEAD http://mercury.picoctf.net:53554/
+ ```
+
+### Cookies
+ - Description
+ ```text
+ Who doesn't love cookies? Try to figure out the best one. http://mercury.picoctf.net:6418/x
+ ```
+ - `Walk-Throught`
+   - Edit Cookie {"name":"18"} 
+
+### Insp3ct0r
+ - Description
+ ```text
+ Kishor Balan tipped us off that the following code may need inspection
+ : https://jupiter.challenges.picoctf.org/problem/9670/ (link)
+ or http://jupiter.challenges.picoctf.org:9670
+ ```
+ - `Walk-Throught`
+   - `First Flag` : https://jupiter.challenges.picoctf.org/problem/9670/
+     - `picoCTF{tru3_d3`
+   - `Second Flag`: https://jupiter.challenges.picoctf.org/problem/9670/mycss.css
+     - `t3ct1ve_0r_ju5t`
+   - ` Third Flag`: https://jupiter.challenges.picoctf.org/problem/9670/myjs.js
+     - `_lucky?2e7b23e3}`
+ - Result
+   - picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?2e7b23e3}
+
+### Scavenger Hunt
+ - Description
+ ```text
+ There is some interesting information hidden around this site http://mercury.picoctf.net:27278/. Can you find it?
+ ```
+ - `Walk-Throught`
+   - `view-source:http://mercury.picoctf.net:27278/` : picoCTF{t
+   - `http://mercury.picoctf.net:27278/mycss.css` : h4ts_4_l0
+   - `http://mercury.picoctf.net:27278/robots.txt`: t_0f_pl4c
+   - `ffuf`: 3s_2_lO0k
+   ```sh 
+   $ ffuf -w Apache.fuzz.txt -u http://mercury.picoctf.net:27278/FUZZ
+   ```
+   - `http://mercury.picoctf.net:27278/.DS_Store` : _a69684fd}
+  - Result : `picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_a69684fd}`
