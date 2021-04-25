@@ -46,3 +46,41 @@
 	  Oh, help? I actually don't do much, but I do have this flag here:
 	  picoCTF{b1scu1ts_4nd_gr4vy_30e77291}
 	  ```
+
+### Nice NetCat
+ - Description
+ ```text
+ There is a nice program that you can talk to by using this command in a shell:
+ $ nc mercury.picoctf.net 35652, but it doesn't speak English...
+ ```
+ - `Walk-Throught`
+ ```python
+  with open("nice_netcat", "r" ,encoding="utf8") as file:
+    strings = "".join([ chr(int(x)) for x in file.readlines()])
+    print(strings)
+ ```
+
+### Static ain't always noise
+ - Description
+ ```text
+ Can you look at the data in this binary: static? This BASH script might help!
+ ```
+ - `Walk-Throught`
+ ```sh
+ $ ./ltdis.sh static
+ $ cat static.ltdis.strings.txt
+ ```
+
+### Tab, Tab, Attack
+ - Description
+ ```text
+ Using tabcomplete in the Terminal will add years to your life, esp.
+ when dealing with long rambling directory structures and filenames: Addadshashanammu.zip
+ ```
+ - `Walk-Throught`
+ ```sh
+ $ apt install tree unzip
+ $ tree -L 11 -f
+ $ cat ./Addadshashanammu/../fang-of-haynekhtnamet
+ ```
+
