@@ -8,6 +8,8 @@ nav:
   - CyberTalent: platform/cybertalent.md
   - PicoCTF: platform/picoctf.md
   - CTFLearn: platform/ctflearn.md
+- Installation:
+  - install: InstallationNote/readme.md
 
 theme:
   name: "material"

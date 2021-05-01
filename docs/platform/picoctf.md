@@ -137,3 +137,17 @@
       ```
     - `http://mercury.picoctf.net:27278/.DS_Store` : _a69684fd}
   - Result : `picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_a69684fd}`
+
+
+
+## Reverse Engineering
+
+### Transformation
+- Description
+  ```
+  I wonder what this really is... enc ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+  ```
+- `Walk-Throught`
+    - Online Decode Cyber Chef: `https://gchq.github.io/CyberChef/#recipe=Text_Encoding_Brute_Force('Encode')&input=54Gp5o2v5I2U5Jm744S25b2i5qW0542f5qWu542044y05pGf5r2m5by45byw5pGk5o2k46S35oW9JQ`
+
+
