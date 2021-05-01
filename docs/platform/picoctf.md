@@ -150,4 +150,33 @@
 - `Walk-Throught`
     - Online Decode Cyber Chef: `https://gchq.github.io/CyberChef/#recipe=Text_Encoding_Brute_Force('Encode')&input=54Gp5o2v5I2U5Jm744S25b2i5qW0542f5qWu542044y05pGf5r2m5by45byw5pGk5o2k46S35oW9JQ`
 
+## Cryptography
+
+### Mind your Ps And Qs
+- Description
+  ```
+  In RSA, a small e value can be problematic, but what about N? Can you decrypt this? values
+  ```
+- `Walk-Throught`
+  ```python
+  from Crypto.Util.number import inverse
+  from Crypto.Util.number import long_to_bytes
+
+  c = 8533139361076999596208540806559574687666062896040360148742851107661304651861689
+  n =769457290801263793712740792519696786147248001937382943813345728685422050738403253
+  e =65537
+
+  # n = p*q 
+  # Usage: factodb (http://factordb.com/)
+  p = 1617549722683965197900599011412144490161
+  q = 475693130177488446807040098678772442581573
+  phi = (p-1) * (q-1)
+
+  d = inverse(e, phi)
+  m = pow(c,d,n)
+
+  print(long_to_bytes(m))
+  ```
+  - `Reference`: `https://www.youtube.com/watch?v=o4K5G7W8CbE`
+
 
