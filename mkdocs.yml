@@ -12,7 +12,7 @@ nav:
   - CTFLearn: platform/ctflearn.md
 - HackTheBox:
   - Spectra: hackthebox/spectra.md
-
+  - ScriptKiddie: hackthebox/scriptkiddie.md
 
 theme:
   name: "material"
