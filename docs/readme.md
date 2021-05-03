@@ -1,6 +1,6 @@
 
 ## Intro
-  - My Cyber Security Skill Note
+  - Cyber Security Note
 
 
 ## Note Tree

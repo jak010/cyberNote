@@ -13,6 +13,8 @@ nav:
 - HackTheBox:
   - Spectra: hackthebox/spectra.md
   - ScriptKiddie: hackthebox/scriptkiddie.md
+- TryHackMe:
+  - DogCat: tryhackme/dogcat.md
 
 theme:
   name: "material"
