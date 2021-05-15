@@ -10,6 +10,7 @@ nav:
   - CyberTalent: platform/cybertalent.md
   - PicoCTF: platform/picoctf.md
   - CTFLearn: platform/ctflearn.md
+  - OverTheWire: platform/overthewire.md
 - HackTheBox:
   - Spectra: hackthebox/spectra.md
   - ScriptKiddie: hackthebox/scriptkiddie.md
