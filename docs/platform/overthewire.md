@@ -74,7 +74,7 @@
 
 #### Level 07
   - Server : `ssh bandit7@bandit.labs.overthewire.org -p 2220`
- 	- password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+ 	  - password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
  - `Walk Throught`
  	```sh
  	$ cat data.txt | grep "millionth"
@@ -85,7 +85,7 @@
 
 #### Level 08
   - Server : `ssh bandit8@bandit.labs.overthewire.org -p 2220`
-  - password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+    - password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
  - `Walk Throught`
   ```sh
   $ cat data.txt | sort | uniq -c | more
@@ -96,7 +96,7 @@
 
 #### Level 09
   - Server : `ssh bandit9@bandit.labs.overthewire.org -p 2220`
-  - password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+    - password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
  - `Walk Throught`
   ```sh
   $ strings data.txt | grep =
@@ -106,7 +106,7 @@
 
 #### Level 10
   - Server : `ssh bandit10@bandit.labs.overthewire.org -p 2220`
-  - password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+    - Password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
  - `Walk Throught`
   ```sh
   $ cat data.txt | base64 -d
@@ -115,25 +115,25 @@
 
 #### Level 11
   - Server : `ssh bandit11@bandit.labs.overthewire.org -p 2220`
-  - password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+    - Password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
  - `Walk Throught`
   ```sh
   $ cat data.txt | tr "[A-Za-z]" "[N-ZA-Mn-za-m]"
   ```
-  - ROT 13 Decode
+    - ROT 13 Decode
  - Next Level: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
 
 #### Level 12
   - Server : `ssh bandit12@bandit.labs.overthewire.org -p 2220`
-  - password: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
- - `Walk Throught`
-  ```sh
-  $ xxd -r data.txt > file.gz 
-  ```
-  - gzip -d
-  - bzip2 -d
-  - tar xvf
+    - Password: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+  - `Walk Throught`
+   ```sh
+   $ xxd -r data.txt > file.gz 
+   ```
+    - gzip -d
+    - bzip2 -d
+    - tar xvf
  - Next Level: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
 
