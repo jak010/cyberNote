@@ -134,7 +134,72 @@
     - gzip -d
     - bzip2 -d
     - tar xvf
- - Next Level: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+  - Next Level: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+#### Level 13
+  - Server : `ssh bandit13@bandit.labs.overthewire.org -p 2220`
+    - Password: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+  - `Walk Throught`
+   ```sh
+   $ chmod 600 sshkey.private
+   $ ssh -i sshkey.private ${SERVER}
+   ```
+  - Next Level: sshkey.private
+
+#### Level 14
+  - Server : `ssh bandit14@bandit.labs.overthewire.org -p 2220`
+    - SSH Private Key Connection 
+    - `cat /etc/bandit_pass/bandit14` : 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+  - `Walk Throught`
+   ```sh
+   $ nc 127.0.0.1 30000
+   ```
+  - Next Level: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+#### Level 15
+  - Server : `ssh bandit15@bandit.labs.overthewire.org -p 2220`
+    - `Password`: BfMYroe26WYalil77FoDi9qh59eK5xNr  
+  - `Walk Throught`
+   ```sh
+   $ openssl s_client -connect localhost:30001
+   ```
+  - Next Level: cluFn7wTiGryunymYOu4RcffSxQluehd
 
 
+#### Level 16
+  - Server : `ssh bandit16@bandit.labs.overthewire.org -p 2220`
+    - `Password`: cluFn7wTiGryunymYOu4RcffSxQluehd  
+  - `Walk Throught`
+   ```sh
+   $ nmap localhost -p 31000-32000
+   ```
+   - Port on 31790
+   - `SSL Connec`
+      ```sh
+      $ ncat --ssl localhost 31790
+     ```
+  - `Private key`
+    ```sh
+    $ ssh -i bandit17.pkey bandit17@bandit.labs.overthewire.org -p 2220
+    ```
 
+  - Next Level: xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+
+#### Level 17
+ - Server : `ssh bandit16@bandit.labs.overthewire.org -p 2220`
+    - `Password`: xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn  
+  - `Walk Throught`
+   ```sh
+   $ diff password.old password.new
+   ```
+  - Next Level: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+#### Level 18
+ - Server : `ssh bandit18@bandit.labs.overthewire.org -p 2220`
+    - `Password`: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd  
+  - `Walk Throught`
+   ```sh
+   $ ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh
+   ```
+  - Next Level: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
