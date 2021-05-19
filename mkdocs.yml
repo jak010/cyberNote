@@ -15,8 +15,9 @@ nav:
   - Spectra: hackthebox/spectra.md
   - ScriptKiddie: hackthebox/scriptkiddie.md
 - TryHackMe:
-  - DogCat: tryhackme/dogcat.md
-
+  - Intermidiate:
+    - dogcat: tryhackme/Intermidiate/dogcat.md
+    - cyborg: tryhackme/Intermidiate/cyborg.md
 theme:
   name: "material"
 
