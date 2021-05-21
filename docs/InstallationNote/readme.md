@@ -1,8 +1,6 @@
 
-## CTF-Tool
-- `CTF` 도구 설치 노트
 
-### RsaCtfTool
+## RsaCtfTool
   - `URL`: https://github.com/Ganapati/RsaCtfTool.git
   - `Enviorment`
     - `OS`: macOs Big Sur (11.2.1) (M1)
@@ -23,3 +21,15 @@
     $ sudo docker build -t alpine:rsactftool .
     ```
     - repository에 Dockerfile 있으니 그걸 이용하자
+
+
+## pip2 Installation
+  - OS: kali 2021.01
+  - pip2 installation guide
+    ```sh
+    sudo apt update
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+    sudo python2 get-pip.py
+
+    sudo pip install --upgrade setuptools
+    ```

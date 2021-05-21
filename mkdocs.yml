@@ -3,7 +3,7 @@ site_name: Jak010 CTF Note
 nav: 
 - README: readme.md
 - Installation:
-  - install: InstallationNote/readme.md
+  - Note: InstallationNote/readme.md
 - Events:
   - Affinity2020: events/affinity2020.md
 - PlatForm:
@@ -16,6 +16,7 @@ nav:
   - ScriptKiddie: hackthebox/scriptkiddie.md
 - TryHackMe:
   - Begginer:
+    - SimpleCTF: tryhackme/Begginer/simplectf.md
     - Team: tryhackme/Begginer/team.md
   - Intermidiate:
     - dogcat: tryhackme/Intermidiate/dogcat.md
