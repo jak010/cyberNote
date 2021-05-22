@@ -144,13 +144,13 @@
       Can you find the robots? https://jupiter.challenges.picoctf.org/problem/56830/ (link) or http://jupiter.challenges.picoctf.org:56830
     ```
 - `Walk-Throught`
-  - Workflow
-    ```text
-    https://jupiter.challenges.picoctf.org/problem/56830/robots.txt
+    - Workflow
+      ```text
+      https://jupiter.challenges.picoctf.org/problem/56830/robots.txt
 
-    https://jupiter.challenges.picoctf.org/problem/56830/1bb4c.html
-    ```
-    - Result: `picoCTF{ca1cu1at1ng_Mach1n3s_1bb4c}`
+      https://jupiter.challenges.picoctf.org/problem/56830/1bb4c.html
+      ```
+        - Result: `picoCTF{ca1cu1at1ng_Mach1n3s_1bb4c}`
 
 ### logon
 - Description
@@ -158,11 +158,11 @@
     The factory is hiding things from all of its users. Can you login as Joe and find what they've been looking at? https://jupiter.challenges.picoctf.org/problem/44573/ (link) or http://jupiter.challenges.picoctf.org:44573
     ```
 - `Walk-Throught`
-  - WorkFlow
-      ```text
-      F12 > Storage > Cookies > admin value `False` -> `True`
-      ```
-      - Result: `picoCTF{th3_c0nsp1r4cy_l1v3s_0c98aacc}`
+    - WorkFlow
+        ```text
+        F12 > Storage > Cookies > admin value `False` -> `True`
+        ```
+        - Result: `picoCTF{th3_c0nsp1r4cy_l1v3s_0c98aacc}`
 
 ### login
 - Description
@@ -172,24 +172,13 @@
     login.mars.picoctf.net
     ```
 - `Walk-Throught`
-  - WorkFlow
-    - `view-source:https://login.mars.picoctf.net/index.js`
-        ```js
-        (async () => {
-    await new Promise((e => window.addEventListener("load", e))), document.querySelector("form").addEventListener("submit", (e => {
-        e.preventDefault();
-        const r = {
-                u: "input[name=username]",
-                p: "input[name=password]"
-            },
-            t = {};
-        for (const e in r) t[e] = btoa(document.querySelector(r[e]).value).replace(/=/g, "");
-        return "YWRtaW4" !== t.u ? alert("Incorrect Username") : "cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ" !== t.p ? alert("Incorrect Password") : void alert(`Correct Password! Your flag is ${atob(t.p)}.`) })) })();
-        const flag = "cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ"
-        atob(flag)
-        ```
-
-        - Result : `picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}`
+    - WorkFlow
+        - view-source:https://login.mars.picoctf.net/index.js  
+          ```js
+            const flag = "cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ"  
+            atob(flag)
+          ```
+            - Result : `picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}`
 
 ### dont-user-client-side
 - Description
@@ -197,11 +186,11 @@
     Can you break into this super secure portal? https://jupiter.challenges.picoctf.org/problem/17682/ (link) or http://jupiter.challenges.picoctf.org:17682
     ```
 - `Walk-Throught`
-  - Work Flow
-      ```text
-      F12 > Source Code View > flag in JavaScript 
-      ```
-      - Result : `picoCTF{no_clients_plz_b706c5}`
+    - Work Flow
+        ```text
+        F12 > Source Code View > flag in JavaScript 
+        ```
+        - Result : `picoCTF{no_clients_plz_b706c5}`
 
 ## Reverse Engineering
 
