@@ -203,3 +203,53 @@
    $ ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh
    ```
   - Next Level: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+#### Level 19
+  - Server : `ssh bandit19@bandit.labs.overthewire.org -p 2220`
+    - `Password`: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x  
+  - `Walk Throught`
+   ```sh
+   $ ./bandit20-do cat /etc/bandit_pass/bandit20
+   ```
+  - Next Level: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+#### Level 20
+  - Server : `ssh bandit20@bandit.labs.overthewire.org -p 2220`
+    - `Password`: GbKksEFF4yrVs6il55v6gwY5aVje5f0j  
+  - `Walk Throught`
+   ```sh
+   $ ./bandit20-do cat /etc/bandit_pass/bandit20
+   ```
+  - Next Level: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+#### Level 21
+  - Server : `ssh bandit21@bandit.labs.overthewire.org -p 2220`
+    - `Password`: GbKksEFF4yrVs6il55v6gwY5aVje5f0j  
+  - `Walk Throught`
+   ```sh
+   # term 1
+   $ nc -l -p 12345
+   GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+   # term 2
+   $ ./suconnect 12345
+   ```
+  - Next Level: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+#### Level 22
+  - Server : `ssh bandit22@bandit.labs.overthewire.org -p 2220`
+    - `Password`: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr  
+  - `Walk Throught`
+   ```sh
+   $ cat /etc/cron.d/cronjob_bandit23
+   @reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+   * * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+   
+   $ cat /usr/bin/cronjob_bandit22.sh
+   $ echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+   $ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+   ```
+  - Next Level: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+
+
