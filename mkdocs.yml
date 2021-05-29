@@ -17,6 +17,7 @@ nav:
   - ScriptKiddie: hackthebox/scriptkiddie.md
 - TryHackMe:
   - Begginer:
+    - LazyAdmin: tryhackme/Begginer/LazyAdmin.md
     - Brookly Nine Nine : tryhackme/Begginer/BrooklyNineNine.md
     - SimpleCTF: tryhackme/Begginer/simplectf.md
     - Team: tryhackme/Begginer/team.md

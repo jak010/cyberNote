@@ -138,7 +138,59 @@
     - `http://mercury.picoctf.net:27278/.DS_Store` : _a69684fd}
   - Result : `picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_a69684fd}`
 
+### Where are the robots
+- Description
+    ```text
+      Can you find the robots? https://jupiter.challenges.picoctf.org/problem/56830/ (link) or http://jupiter.challenges.picoctf.org:56830
+    ```
+- `Walk-Throught`
+    - Workflow
+      ```text
+      https://jupiter.challenges.picoctf.org/problem/56830/robots.txt
 
+      https://jupiter.challenges.picoctf.org/problem/56830/1bb4c.html
+      ```
+        - Result: `picoCTF{ca1cu1at1ng_Mach1n3s_1bb4c}`
+
+### logon
+- Description
+    ```text
+    The factory is hiding things from all of its users. Can you login as Joe and find what they've been looking at? https://jupiter.challenges.picoctf.org/problem/44573/ (link) or http://jupiter.challenges.picoctf.org:44573
+    ```
+- `Walk-Throught`
+    - WorkFlow
+        ```text
+        F12 > Storage > Cookies > admin value `False` -> `True`
+        ```
+        - Result: `picoCTF{th3_c0nsp1r4cy_l1v3s_0c98aacc}`
+
+### login
+- Description
+    ```text
+    My dog-sitter's brother made this website but I can't get in; can you help?
+    
+    login.mars.picoctf.net
+    ```
+- `Walk-Throught`
+    - WorkFlow
+        - view-source:https://login.mars.picoctf.net/index.js  
+          ```js
+            const flag = "cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ"  
+            atob(flag)
+          ```
+            - Result : `picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}`
+
+### dont-user-client-side
+- Description
+    ```text
+    Can you break into this super secure portal? https://jupiter.challenges.picoctf.org/problem/17682/ (link) or http://jupiter.challenges.picoctf.org:17682
+    ```
+- `Walk-Throught`
+    - Work Flow
+        ```text
+        F12 > Source Code View > flag in JavaScript 
+        ```
+        - Result : `picoCTF{no_clients_plz_b706c5}`
 
 ## Reverse Engineering
 
