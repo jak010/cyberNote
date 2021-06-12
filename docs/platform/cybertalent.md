@@ -121,6 +121,19 @@
 	- 프록시를 통해 Authorization 헤더를 보면 base64로 디코딩 되어있음
 	- 해당 필드를 admin으로 변경한 뒤 base64로 다시 디코딩 하고 Authorization의 값을 바꿔주면 플래그 획득 가능 
 
+### Searching for the cookie
+- URL: `http://34.77.37.110/searching-cookie/`
+- Walk Throught
+    - 입력창에 `</script><script>alert(document.cookie)</script>` 와 같이 입력 시 플래그가 나타남
+
+### bean
+- URL: `https://cybertalents.com/challenges/web/bean`
+- Walk Throguht
+    - Nginx Directory Traversal을 이용해야하는 문제임
+    - 주어지는 환경에서 `gobuster`로 접근가능한 히든 디렉토리 경로를 찾아낸 뒤 `..` 로 접근 가능
+    - `Ex` : `/bean/files../`
+    - 이후 /etc/home/flag.txt에 플래그 획득 가능
+
 ---
 
 ## Network
