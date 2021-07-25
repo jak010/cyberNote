@@ -15,6 +15,7 @@ nav:
 - HackTheBox:
   - Spectra: hackthebox/spectra.md
   - ScriptKiddie: hackthebox/scriptkiddie.md
+  - Cap: hackthebox/cap.md
 - TryHackMe:
   - Begginer:
     - LazyAdmin: tryhackme/Begginer/LazyAdmin.md
