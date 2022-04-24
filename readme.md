@@ -1,12 +1,11 @@
 # Cyber Note
-- CTF, Pentesting WalkThrought
+- All My Walk Throught 
 
-## Notice 
- - My Cyber Security Study Note 
+## Notice
+ - Pentest & CTF Practice
+
+## Requirements
+ - `requirements.txt` 참고
 
 ## Page Link
  - https://jak010.github.io/cyberNote/readme/ 
- - Requirment (Python > 3.6.x)
-   - pip install mkdocs
-   - pip install mkdocstrings 
-   - pip install mkdocs-material
