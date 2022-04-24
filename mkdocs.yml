@@ -14,6 +14,8 @@ nav:
   - PicoCTF: platform/picoctf.md
   - CTFLearn: platform/ctflearn.md
   - OverTheWire: platform/overthewire.md
+  - DreamHack: platform/dreamhackCTF.md
+  - GoogleCTf: platform/google_ctf/googleCTF.md
 - HackTheBox:
   - Spectra: hackthebox/spectra.md
   - ScriptKiddie: hackthebox/scriptkiddie.md
