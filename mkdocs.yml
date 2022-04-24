@@ -7,6 +7,8 @@ nav:
   - Note: InstallationNote/readme.md
 - Events:
   - Affinity2020: events/affinity2020.md
+  - CyberYoDDa2021: events/cyberyodda2021.md
+  - HacktoberCTF: events/hacktoberCTF/readme.md
 - PlatForm:
   - CyberTalent: platform/cybertalent.md
   - PicoCTF: platform/picoctf.md
